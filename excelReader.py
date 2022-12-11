@@ -10,3 +10,7 @@ def readServants(servantClass):
         outList.append(servant)
     
     return outList
+
+def getClassList():
+    wb = load_workbook(filename='Servants.xlsx')
+    return(wb.sheetnames)

@@ -1,11 +1,11 @@
 import random
 from Servant import Servant
 from constants import CLASS_LIST
-from excelReader import readServants
+from excelReader import readServants, getClassList
 
 #global ServantsPool
 servantsPool = []
-servantClassList = CLASS_LIST
+servantClassList = getClassList()
 
 def createServantsPool():
     for i in servantClassList:
