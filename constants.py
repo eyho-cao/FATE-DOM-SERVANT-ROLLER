@@ -1,0 +1,1 @@
+CLASS_LIST = ["Saber", "Lancer", "Archer", "Rider", "Caster", "Assassin", "Berserker", "Extra"]
