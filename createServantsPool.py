@@ -1,6 +1,5 @@
 import random
 from Servant import Servant
-from constants import CLASS_LIST
 from excelReader import readServants, getClassList
 
 #global ServantsPool
