@@ -9,11 +9,13 @@ servantClassList = getClassList()
 def createServantsPool():
     for i in servantClassList:
         servantsPool.append(drawRandomServant(i))
-    lastServant = random.choice(servantClassList)
-    servantsPool.append(drawRandomServant(lastServant))
+    last = selectRandomClass()
+    servantsPool.append(drawRandomServant(last))
 
     return servantsPool
 
+def selectRandomClass():
+    return random.choice(servantClassList)
 
 def drawRandomServant(servantClass):
     unfilteredServantsList = readServants(servantClass)
