@@ -37,7 +37,7 @@ def isServantInPool(servant, pool):
 
 def drawRandomServant():
     servantClass = selectRandomClass()
-    servant = drawRandomServantFromClass(servantClass)
+    servant = drawRandomServantFromClass(servantClass, servantsPool)
     return servant
 
 def drawMiyuServants(usedPool):
@@ -47,7 +47,7 @@ def drawMiyuServants(usedPool):
         servant = None
         while servantUsed:
             servantClass = selectRandomClass()
-            servant = drawRandomServantFromClass(servantClass)
+            servant = drawRandomServantFromClass(servantClass, servantsPool)
             if(not isServantInPool(servant, usedPool)):
                 servantUsed = False
         if(servant):
